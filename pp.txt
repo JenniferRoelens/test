@@ -1,0 +1,28 @@
+from pandas import pd
+
+
+#----------------------------------------------------------------------------------
+# IMPORT DATABASE
+#----------------------------------------------------------------------------------
+
+clientDB = pd.read_sql, pd.read_excel
+# check dataformats
+clientDB['client_since'] = pd.to_datetime(dclientDB['client_since'])
+
+segmDB =
+clientsegmDB = pd.concat([clientDB, segmDB], axis=1, join='inner')
+#or
+clientsegmDB = pd.concat([clientDB, segmDB], axis=1, join_axes=[clientDB.index])
+
+visitsDB = 
+visitdetDB = 
+prodDB = 
+
+
+#----------------------------------------------------------------------------------
+# EXPLORE DATABASE
+#----------------------------------------------------------------------------------
+clientDB.describe(include='all')
+
+clientsegmDB.describe(include='all')
+
